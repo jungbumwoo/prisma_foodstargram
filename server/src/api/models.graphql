@@ -1,0 +1,61 @@
+type User {
+id: ID! 
+username: String! 
+email: String! 
+firstName: String! 
+lastName: String!
+bio: String!
+followers: [User!]! 
+following: [User!]! 
+posts: [Post!]!
+likes: [Like!]!
+comments: [Comment!]
+loginSecret: String!
+}
+
+type Post {
+id: ID! 
+location: String!
+caption: String!
+user: User!
+store: Store
+catagory: String
+foods: [Food!]!
+likes: [Like!]!
+comments: [Comment!]!
+}
+
+type Like {
+id: ID! 
+user: User!
+post: Post!
+}
+
+type Comment {
+id: ID! 
+text: String!
+user: User!
+post: Post!
+}
+
+type File {
+id: ID! 
+url: String!
+post: Post!
+}
+
+type Food {
+  id: ID!
+  foodName: String!
+  catagory: String
+  url: String!
+  post: Post!
+}
+
+type Store {
+  id: ID!
+  storeName: String!
+  catagory: String
+  owner: User
+  location: String
+}
