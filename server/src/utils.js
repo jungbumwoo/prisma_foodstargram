@@ -28,7 +28,7 @@ export const sendSecretMail = (address, secret) => {
         to: address,
         subject: "🔒Login Secret for Prismagram🔒",
         text: "lala blah blah",
-        html: `Hello! Your login secret is ${secret}.<br/>Copy paste on the app/website to log in`
+        html: `Hello! Your login secret is <b>${secret}</b>.<br/>Copy paste on the app/website to log in`
     };
     return sendMail(email);
 }

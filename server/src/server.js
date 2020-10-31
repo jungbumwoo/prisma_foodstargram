@@ -13,10 +13,6 @@ console.log(process.env.port);
 
 const server = new GraphQLServer({ schema });
 
-
-sendSecretMail("jungbumwoo@naver.com", "4885");
-
-
 server.express.use(logger("dev"));
 
 server.start({ port: PORT }, () =>
