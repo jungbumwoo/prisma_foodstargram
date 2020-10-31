@@ -10,12 +10,12 @@ following: [User!]!
 posts: [Post!]!
 likes: [Like!]!
 comments: [Comment!]
-loginSecret: String!
+loginSecret: String
 }
 
 type Post {
 id: ID! 
-location: String!
+location: String
 caption: String!
 user: User!
 store: Store
