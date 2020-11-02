@@ -4,7 +4,7 @@ username: String!
 email: String! 
 firstName: String! 
 lastName: String!
-bio: String!
+bio: String
 followers: [User!]! 
 following: [User!]! 
 posts: [Post!]!
